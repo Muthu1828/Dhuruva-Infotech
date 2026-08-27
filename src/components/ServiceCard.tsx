@@ -20,7 +20,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, featured = fa
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.55, delay: index * 0.07, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.55, delay: index * 0.07, ease: 'easeOut' }}
       whileHover={{ y: -4, transition: { duration: 0.2 } }}
       className={`rounded-2xl border transition-all duration-300 flex flex-col justify-between p-6 sm:p-8 ${
         featured

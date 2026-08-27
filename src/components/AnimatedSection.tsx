@@ -53,7 +53,7 @@ export const AnimatedSection: React.FC<AnimatedSectionProps> = ({
       variants={variants[direction]}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay, ease: 'easeOut' }}
     >
       {children}
     </motion.div>
@@ -111,7 +111,7 @@ export const StaggerItem: React.FC<StaggerItemProps> = ({
     <motion.div
       className={className}
       variants={variants[direction]}
-      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.55, ease: 'easeOut' }}
     >
       {children}
     </motion.div>
